@@ -1,4 +1,4 @@
 # !/bin/bash
-start=$(date +"%y-%m-%d %H:%M -->")
+start=$(date +"%Y-%m-%d %H:%M -->")
 echo $start
 
