@@ -1,3 +1,3 @@
 # !/bin/bash
-for d in /home/giuseppe/svn/*; do svn update $d; done
+for d in /home/giuseppe/svn/*; do echo "svn update $d" && svn update $d && echo "--------"; done
 
