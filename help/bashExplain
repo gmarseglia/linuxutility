@@ -3,3 +3,6 @@ create: create in the current folder a .sh file , giving it its right permission
 svnUpdateAll: update every folder in ~/svn, via svn update.
 
 svnCommitAll: commit every folder in ~/svn, via svn commit, using the first parameter as -m parameter.
+
+printdate: print the date in the format used in the changelog file (e.g. 2019.5.24 -> )
+
