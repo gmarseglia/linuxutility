@@ -1,0 +1,50 @@
+find:
+find FOLDER -iname NAME -type f(FILE)/d(DIRECTORY)
+
+find e ln:
+for f in $(find /home/giuseppe/giuseppe/Stuff2/Pre-Mid-2019/ -iname "*.mp4"); do ln -s "$f" "/home/giuseppe/giuseppe/Stuff2/mp4/$(basename $f)"; done
+	
+fix desktop:
+gsettings set org.nemo.desktop show-desktop-icons true
+
+curl ip:
+curl ifconfig.co/ip
+
+file e informazioni:
+for f in *; do file $f > file && ~/bash/tutorial/tokenize/tokenize.sh file , -2 && rm file; done
+
+risolvere un link:
+readlink -f LINK
+
+follow:
+follow LINK
+
+follow e cd:
+. follow LINK
+
+lista di comandi man:
+man -k
+
+disk usage:
+df
+
+start services:
+for i in $(cat /home/giuseppe/bash/service);do sudo service $i start; done && not 5 Done
+
+dispositivi connessi:
+ip neigh
+
+controllare socket:
+ss || netstat
+
+basename e rimuovi estensione:
+basename FILENAME .ESTENSIONE
+
+rimuovere una repo:
+sudo add-apt-repository LINKREPO
+
+grandezza cartelle:
+du -shc */
+
+occupazione memoria cartelle:
+ncdu
