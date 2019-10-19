@@ -23,3 +23,5 @@
 19.10.16 12:55 -> Installato il package rabbitvcs-cli
 19.10.19 15:09 -> Linkata la cartella ~/Linux/bash in /usr/local/bin/bash
 19.10.19 15:25 -> aggiunta la riga source /etc/enviroment al file .profile
+19.10.19 17:12 -> modificato il link /usr/local/bin/bash, ora punta a ~/svn/linuxutility.git/trunc/bash
+19.10.19 17:12 -> modificata la cartella ~/Linux, ora link a ~/svn/linuxutility.git/trunc/linux
