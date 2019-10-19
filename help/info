@@ -1,0 +1,13 @@
+Aprire code da terminale: io.elementary.code
+
+Eliminare un PPA: eliminarla da /etc/apt/sources.list.d/
+
+Partizione /home di Mint: mount /dev/sda7 ndo/te/pare
+
+Aggiungere comandi personalizzati: /usr/local/bin
+
+Listare tutte le opzioni del desktop: gsettings list-recursively
+
+Extra: Scarica desktop folder per Elementary
+
+Modificare variable PATH: source /etc/enviroment
