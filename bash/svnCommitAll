@@ -1,0 +1,10 @@
+# !/bin/bash
+if [ -z $1 ];
+then
+	echo "Error: Insert commit"
+	read comment
+else
+	comment=$1
+fi
+
+for d in /home/giuseppe/svn/*/; do svn commit $d -m "$comment"; done
