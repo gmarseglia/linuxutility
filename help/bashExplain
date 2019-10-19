@@ -1,0 +1,5 @@
+create: create in the current folder a .sh file , giving it its right permission to be executed.
+
+svnUpdateAll: update every folder in ~/svn, via svn update.
+
+svnCommitAll: commit every folder in ~/svn, via svn commit, using the first parameter as -m parameter.
