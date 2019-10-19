@@ -2,7 +2,7 @@
 if [ -z $1 ];
 then
 	#echo "Error: Insert commit"
-	comment=$(printDate) 'Update'
+	comment="$(printDate) Update"
 else
 	comment=$1
 fi
