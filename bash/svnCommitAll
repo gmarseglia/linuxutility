@@ -1,10 +1,11 @@
 # !/bin/bash
 if [ -z $1 ];
 then
-	echo "Error: Insert commit"
-	read comment
+	#echo "Error: Insert commit"
+	comment=$(printDate) 'Update'
 else
 	comment=$1
 fi
 
+echo $comment
 for d in /home/giuseppe/svn/*/; do svn commit $d -m "$comment"; done
