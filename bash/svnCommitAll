@@ -7,5 +7,5 @@ else
 	comment=$1
 fi
 
-echo $comment
-for d in /home/giuseppe/svn/*/; do svn commit $d -m "$comment"; done
+#echo $comment
+for d in /home/giuseppe/svn/*/; do echo "svn commit $d -m $comment" && svn commit $d -m "$comment" && echo "--------"; done
