@@ -1,0 +1,16 @@
+# !/bin/bash
+if [ -z $1 ];
+then
+echo "Insert bash name"
+read name
+name=$PWD/$name.sh;
+else
+name=$PWD/$1.sh;
+fi
+
+echo Creating $name
+touch $name
+echo "# !/bin/bash" >> $name
+chmod +rx $name
+nano $name
+
