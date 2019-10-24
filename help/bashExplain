@@ -6,3 +6,4 @@ svnCommitAll: commit every folder in ~/svn, via svn commit, using the first para
 
 printdate: print the date in the format used in the changelog file (e.g. 2019.5.24 -> )
 
+appendChangelog: append la stringa di printDate al file /home/giuseppe/Linux/changelog

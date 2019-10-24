@@ -32,3 +32,4 @@
 2019-10-24 19:39 -> Installato il package apache2
 2019-10-24 20:32 -> Linkata la cartella ~/Programming/javascript in /var/www/html per usarla con apache2
 2019-10-24 20:44 -> creato il file ~/Linux/service dove ci sono i services da controllare tramite systemctl
+2019-10-24 20:52 -> prova
