@@ -1,35 +1,36 @@
-19.10.16 00:36 -> Modificato il file /etc/sudoers per eseguire i comandi sudo senza password; aggiunta la riga "giuseppe ALL=(ALL) NOPASSWD:ALL"
-19.10.16 00:51 -> Installato il package eclipse
-19.10.16 00:54 -> Installato il package software-properties-common per aggiungere le PPA
-19.10.16 01:03 -> Installato il package snapd
-19.10.16 01:08 -> Rimosso il package eclipse
-19.10.16 01:14 -> Installato eclipse tramite l'installer del sito; installato in ~/Softwares/eclipse
-19.10.16 01:35 -> Aggiunto il file ~/.local/share/applications/eclipse.desktop che funziona come entry per le app desktop
-19.10.16 01:40 -> Installato il package gcc
-19.10.16 01:52 -> Installato smartsvn dalla tarball; installato in ~/Softwares/smartsvn
-19.10.16 01:57 -> Creata la entry desktop per SmartSVN
-19.10.16 02:01 -> Aggiunti dei link in /usr/local/bin
-19.10.16 02:04 -> Installato il package gedit
-19.10.16 02:04 -> Installato il package rabbitvcs-nautilus
-19.10.16 02:04 -> Installato il package nautilus
-19.10.16 02:17 -> Installato il package gtk2-engines-pixbuf per risolverse errore nella gtk
-19.10.16 02:20 -> Installato il package gparted
-19.10.16 02:21 -> Installato lo snap atom
-19.10.16 02:23 -> Aggiunta la directory /snap/bin alla variabile PATH tramite il file /etc/enviroment
-19.10.16 02:25 -> Installato lo snap sublime-text
-19.10.16 02:27 -> Installato il package libcanberra-gtk-module per risolvere errore nella gtk
-19.10.16 02:38 -> Aggiunta la directory ~/snap al file ~/.hidden in modo da non farla apparire nel file manager
-19.10.16 03:15 -> Editato ~/.profile inserendo la variabile GTK_MODULES per evitare errori della gtk
-19.10.16 12:55 -> Installato il package rabbitvcs-cli
-19.10.19 15:09 -> Linkata la cartella ~/Linux/bash in /usr/local/bin/bash
-19.10.19 15:25 -> aggiunta la riga source /etc/enviroment al file .profile
-19.10.19 17:12 -> modificato il link /usr/local/bin/bash, ora punta a ~/svn/linuxutility.git/trunc/bash
-19.10.19 17:12 -> modificata la cartella ~/Linux, ora link a ~/svn/linuxutility.git/trunc/linux
-19.10.19 17:26 -> aggiuntala cartella ~/svn, che contiene tutti i checkout di svn
-19.10.19 18:11 -> aggiunti nuovi file in ~/bash, con relativa spiegazione in ~/Linux/explain
+2019-10-16 00:36 -> Modificato il file /etc/sudoers per eseguire i comandi sudo senza password; aggiunta la riga "giuseppe ALL=(ALL) NOPASSWD:ALL"
+2019-10-16 00:51 -> Installato il package eclipse
+2019-10-16 00:54 -> Installato il package software-properties-common per aggiungere le PPA
+2019-10-16 01:03 -> Installato il package snapd
+2019-10-16 01:08 -> Rimosso il package eclipse
+2019-10-16 01:14 -> Installato eclipse tramite l'installer del sito; installato in ~/Softwares/eclipse
+2019-10-16 01:35 -> Aggiunto il file ~/.local/share/applications/eclipse.desktop che funziona come entry per le app desktop
+2019-10-16 01:40 -> Installato il package gcc
+2019-10-16 01:52 -> Installato smartsvn dalla tarball; installato in ~/Softwares/smartsvn
+2019-10-16 01:57 -> Creata la entry desktop per SmartSVN
+2019-10-16 02:01 -> Aggiunti dei link in /usr/local/bin
+2019-10-16 02:04 -> Installato il package gedit
+2019-10-16 02:04 -> Installato il package rabbitvcs-nautilus
+2019-10-16 02:04 -> Installato il package nautilus
+2019-10-16 02:17 -> Installato il package gtk2-engines-pixbuf per risolverse errore nella gtk
+2019-10-16 02:20 -> Installato il package gparted
+2019-10-16 02:21 -> Installato lo snap atom
+2019-10-16 02:23 -> Aggiunta la directory /snap/bin alla variabile PATH tramite il file /etc/enviroment
+2019-10-16 02:25 -> Installato lo snap sublime-text
+2019-10-16 02:27 -> Installato il package libcanberra-gtk-module per risolvere errore nella gtk
+2019-10-16 02:38 -> Aggiunta la directory ~/snap al file ~/.hidden in modo da non farla apparire nel file manager
+2019-10-16 03:15 -> Editato ~/.profile inserendo la variabile GTK_MODULES per evitare errori della gtk
+2019-10-16 12:55 -> Installato il package rabbitvcs-cli
+2019-10-19 15:09 -> Linkata la cartella ~/Linux/bash in /usr/local/bin/bash
+2019-10-19 15:25 -> aggiunta la riga source /etc/enviroment al file .profile
+2019-10-19 17:12 -> modificato il link /usr/local/bin/bash, ora punta a ~/svn/linuxutility.git/trunc/bash
+2019-10-19 17:12 -> modificata la cartella ~/Linux, ora link a ~/svn/linuxutility.git/trunc/linux
+2019-10-19 17:26 -> aggiuntala cartella ~/svn, che contiene tutti i checkout di svn
+2019-10-19 18:11 -> aggiunti nuovi file in ~/bash, con relativa spiegazione in ~/Linux/explain
 2019-10-19 18:27 -> creato nuovo formato per il changelog
 2019-10-23 13:52 -> aggiunta la cartella ~/svn/TravisTest
 2019-10-24 19:39 -> Installato il package apache2
 2019-10-24 20:32 -> Linkata la cartella ~/Programming/javascript in /var/www/html per usarla con apache2
 2019-10-24 20:44 -> creato il file ~/Linux/service dove ci sono i services da controllare tramite systemctl
 2019-10-24 20:52 -> prova
+2019-10-24 20:56 -> aggiunto il bash appendChangelog alla cartella ~/bash, aggiornato ~/Linux/bashExplain
