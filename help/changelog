@@ -36,3 +36,5 @@
 2019-10-24 20:56 -> aggiunto il bash appendChangelog alla cartella ~/bash, aggiornato ~/Linux/bashExplain
 2019-10-25 21:06 -> installato il package pepperflashplugin-nonfree, per il supporto flash su chromium
 2019-10-26 11:22 -> rimosso il package pepperflashplugin-nonfree
+2019-10-31 12:11 -> Installato il package nodejs
+2019-11-01 20:20 -> cambiata la porta di ascolto di apache2 tramite il file /etc/apache2/ports.conf
