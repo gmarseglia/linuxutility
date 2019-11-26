@@ -1,0 +1,7 @@
+# !/bin/bash
+echo "Updating and cleaning"
+echo "----------------------"
+for f in update upgrade autoclean autoremove; do echo "sudo apt $f -y" && echo "----------------------" && sudo apt $f -y && echo "----------------------"; done
+echo "----------------------"
+echo "Done"
+echo "----------------------"

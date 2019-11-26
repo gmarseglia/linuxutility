@@ -38,3 +38,8 @@
 2019-10-26 11:22 -> rimosso il package pepperflashplugin-nonfree
 2019-10-31 12:11 -> Installato il package nodejs
 2019-11-01 20:20 -> cambiata la porta di ascolto di apache2 tramite il file /etc/apache2/ports.conf
+2019-11-24 16:38 -> Installato il package tor
+2019-11-24 17:38 -> Rimosso il package tor
+2019-11-24 18:38 -> Scaricato tor-browser dal sito ufficiale e inserito in ~/Softwares
+2019-11-24 19:38 -> Scaricato balena-etcher dal sito ufficiale e inserito in ~/Softwares
+2019-11-25 19:26 -> Installato il package firefox
