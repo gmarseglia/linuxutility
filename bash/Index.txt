@@ -1,0 +1,7 @@
+appendChagelog:	Appende al file $path la stringa di data creata con il formato di printDate, e lo apre con subl (SublimeTextEditor)
+autoUpdate: 	Esegue in ordine la sudo apt update, upgrade, autoclean, autoremove
+create:			Permette di creare nella directory attuale un file .sh con i permessi settati
+getLocalIp:		ritorna l'attuale indirizzo IP interno sulla scheda $card
+printDate:		Ritorna la data con il formato "2019-11-26 19:32 ->"
+svnCommitAll:	Committa con svn tutte le cartelle in $path
+svnUpdateAll:	Update con svn tutte le cartelle in $path
