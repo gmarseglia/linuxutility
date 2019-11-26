@@ -1,4 +1,12 @@
 # !/bin/bash
+#
+#	Committa con svn tutte le cartelle in $path;
+#	Se presente un argomento lo usa come commento, altrimenti usa il risultato di printDate
+#
+#	Richiede printDate, svn
+#
+path="/home/giuseppe/svn"
+
 if [ -z $1 ];
 then
 	#echo "Error: Insert commit"
@@ -8,4 +16,4 @@ else
 fi
 
 #echo $comment
-for d in /home/giuseppe/svn/*/; do echo "svn commit $d -m $comment" && svn commit $d -m "$comment" && echo "--------"; done
+for d in $path/*/; do echo "svn commit $d -m $comment" && svn commit $d -m "$comment" && echo "--------"; done

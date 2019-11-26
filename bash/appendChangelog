@@ -1,3 +1,8 @@
 # !/bin/bash
+#
+#	Appende al file $path la stringa di data creata con il formato di printDate, e lo apre con subl (SublimeTextEditor)
+#
+#	Richiede printDate, subl
+#
 path="/home/giuseppe/Linux/changelog"
 printDate >> $path && subl $path

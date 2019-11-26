@@ -1,3 +1,11 @@
 # !/bin/bash
-for d in /home/giuseppe/svn/*; do echo "svn update $d" && svn update $d && echo "--------"; done
+#
+#	Update con svn tutte le cartelle in $path;
+#
+#	Richiede svn
+#
+
+path="/home/giuseppe/svn"
+
+for d in $path/*; do echo "svn update $d" && svn update $d && echo "--------"; done
 

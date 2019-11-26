@@ -1,4 +1,8 @@
 # !/bin/bash
+#
+#	Esegue in ordine la sudo apt update, upgrade, autoclean, autoremove
+#	tutte con l'opzione -y, per eliminare la conferma da parte utente
+#
 echo "Updating and cleaning"
 echo "----------------------"
 for f in update upgrade autoclean autoremove; do echo "sudo apt $f -y" && echo "----------------------" && sudo apt $f -y && echo "----------------------"; done
