@@ -1,50 +1,49 @@
-find:
-find FOLDER -iname NAME -type f(FILE)/d(DIRECTORY)
+find:	find FOLDER -iname NAME -type f(FILE)/d(DIRECTORY)
 
-find e ln:
-for f in $(find /home/giuseppe/giuseppe/Stuff2/Pre-Mid-2019/ -iname "*.mp4"); do ln -s "$f" "/home/giuseppe/giuseppe/Stuff2/mp4/$(basename $f)"; done
+find e ln:	for f in $(find /home/giuseppe/giuseppe/Stuff2/Pre-Mid-2019/ -iname "*.mp4"); do ln -s "$f" "/home/giuseppe/giuseppe/Stuff2/mp4/$(basename $f)"; done
 	
-fix desktop:
-gsettings set org.nemo.desktop show-desktop-icons true
+fix desktop (deprecated):	gsettings set org.nemo.desktop show-desktop-icons true
 
-curl ip:
-curl ifconfig.co/ip
+curl ip:	curl ifconfig.co/ip
 
-file e informazioni:
-for f in *; do file $f > file && ~/bash/tutorial/tokenize/tokenize.sh file , -2 && rm file; done
+file e informazioni (deprecated):	for f in *; do file $f > file && ~/bash/tutorial/tokenize/tokenize.sh file , -2 && rm file; done
 
-risolvere un link:
-readlink -f LINK
+risolvere un link:	readlink -f LINK
 
-follow:
-follow LINK
+follow (deprecated):	follow LINK
 
-follow e cd:
-. follow LINK
+follow e cd (deprecated):	. follow LINK
 
-lista di comandi man:
-man -k
+lista di comandi man:	man -k
 
-disk usage:
-df
+disk usage:	df
 
-start services:
-for i in $(cat /home/giuseppe/bash/service);do sudo service $i start; done && not 5 Done
+start services (old):	for i in $(cat /home/giuseppe/bash/service);do sudo service $i start; done
 
-dispositivi connessi:
-ip neigh
+dispositivi connessi:	ip neigh
 
-controllare socket:
-ss || netstat
+controllare socket:	ss || netstat
 
-basename e rimuovi estensione:
-basename FILENAME .ESTENSIONE
+basename e rimuovi estensione:	basename FILENAME .ESTENSIONE
 
-rimuovere una repo:
-sudo add-apt-repository LINKREPO
+aggiugnere una repo:	sudo add-apt-repository LINKREPO
 
-grandezza cartelle:
-du -shc */
+grandezza cartelle:	du -shc */
 
-occupazione memoria cartelle:
-ncdu
+occupazione memoria cartelle:	ncdu
+
+Modificare variable PATH:	source /etc/enviroment
+
+Listare tutte le opzioni del desktop:	gsettings list-recursively
+
+Aggiungere comandi personalizzati:	/usr/local/bin
+
+Eliminare un PPA / Repository:	eliminarla da /etc/apt/sources.list.d/
+
+Aprire code da terminale (Elementary OS):	io.elementary.code
+
+Permessi file: chmod 666 $FILE
+
+Permessi cartelle: chmod 775 $CARTELLA
+
+Ignorare warning ed errori: $COMAND 2>/dev/null

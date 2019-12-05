@@ -36,15 +36,15 @@ echo -e "Checking updates\n$div"
 sudo apt update -y 2>/dev/null | tee $temp
 echo $div
 
-if [ -z $(awk '/All/ {print 0}' $temp) ] ;
+if [ -z $(awk '/All/ {print 0}' $temp) -o $1 = "-a" -o $1 = "--all" ] ;
 then
 	echo "Upgrading and cleaning"
 	echo $div
-	for f in upgrade autoclean autoremove; do echo "sudo apt $f -y" && echo $div && sudo apt $f -y && echo "----------------------"; done
+	for f in upgrade autoclean autoremove; do echo "sudo apt $f -y" && echo $div && sudo apt $f -y && echo $div; done
 	echo $div
 fi
 
-#rm $temp
+rm $temp
 echo "Done"
 echo $div
 exit 0

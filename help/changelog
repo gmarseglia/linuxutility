@@ -50,3 +50,5 @@
 2019-11-27 00:25 -> Rimosso lo snap atom
 2019-11-27 00:52 -> Rimossa la cartella old/ in ~/Download per errore
 2019-12-01 21:16 -> provata modifica di /etc/default/grub per risolvere problema di suspens, copia in ~/Linux/copies
+2019-12-05 18:27 -> rimosso il il file ~/Linux/info, merge con ~/Linux/myhelp
+2019-12-05 18:28 -> aggiunto il file ~/Linux/copies/gparted_details.htm, riguardante la partizione per Linux MX
