@@ -1,0 +1,23 @@
+# !/bin/bash
+
+if [ $1 -a -e $1 ] ;
+then
+	in=$1
+else
+	echo "Invalid filename."
+	exit 1
+fi
+
+max=0
+
+while read l ;
+do
+	actual=$(expr $(echo $l | wc -c))
+	if [ $actual -gt $max ] ;
+	then
+		max=$actual
+	fi
+done < "$in"
+
+echo $max
+exit 0

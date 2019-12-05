@@ -1,0 +1,21 @@
+# !/bin/bash
+#
+#	Stampa una stringa di "-" lunga max;
+#	accetta un parametro
+#
+
+c=0
+if [ -z $1 ] ;
+then
+	max=33;
+else
+	max=$(expr $1)
+fi
+
+while [ $max -gt $c ] ;
+do
+	echo -n "-"
+	let "c++"
+done
+echo ""
+exit 0
