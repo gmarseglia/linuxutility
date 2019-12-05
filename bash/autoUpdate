@@ -1,7 +1,9 @@
 # !/bin/bash
 #
 #	Esegue in ordine la sudo apt update, upgrade, autoclean, autoremove
-#	tutte con l'opzione -y, per eliminare la conferma da parte utente
+#	tutte con l'opzione -y, per eliminare la conferma da parte utente;
+#	crea e rimuove automaticamente il file "temp.out"
+#	prova a richiedere "liner"
 #
 
 temp="temp.out"
@@ -14,26 +16,34 @@ then
 	then
 		rm $temp
 	else
-		echo "exiting"
+		echo "Exiting."
 		exit 1
 	fi
 fi
 
-echo "----------------------"
-echo "Checking updates"
-echo "----------------------"
+div=$(command -v liner)
+if [ $? = 0 ];
+then
+	div=$(liner)
+else
+	div="----------------------"
+fi
+
+echo $div
+echo -e "Checking updates\n$div"
+#echo $div
 sudo apt update -y 2>/dev/null | tee $temp
-echo "----------------------"
+echo $div
 
 if [ -z $(awk '/All/ {print 0}' $temp) ] ;
 then
 	echo "Upgrading and cleaning"
-	echo "----------------------"
-	for f in upgrade autoclean autoremove; do echo "sudo apt $f -y" && echo "----------------------" && sudo apt $f -y && echo "----------------------"; done
-	echo "----------------------"
+	echo $div
+	for f in upgrade autoclean autoremove; do echo "sudo apt $f -y" && echo $div && sudo apt $f -y && echo "----------------------"; done
+	echo $div
 fi
 
-rm $temp
+#rm $temp
 echo "Done"
-echo "----------------------"
+echo $div
 exit 0
