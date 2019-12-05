@@ -3,9 +3,18 @@
 #	Update con svn tutte le cartelle in $path;
 #
 #	Richiede svn
+#	Prova a richieder liner
 #
 
 path="/home/giuseppe/svn"
 
-for d in $path/*; do echo "svn update $d" && svn update $d && echo "--------"; done
+div=$(command -v liner)
+if [ $? = 0 ];
+then
+	div=$(liner)
+else
+	div="----------------------"
+fi
+
+for d in $path/*; do echo "svn update $d" && svn update $d && echo $div; done
 
