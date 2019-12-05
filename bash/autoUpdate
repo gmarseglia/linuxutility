@@ -3,9 +3,37 @@
 #	Esegue in ordine la sudo apt update, upgrade, autoclean, autoremove
 #	tutte con l'opzione -y, per eliminare la conferma da parte utente
 #
-echo "Updating and cleaning"
+
+temp="temp.out"
+
+if [ -e $temp ] ; 
+then
+	echo -e "$temp is already in use.\nDo you want to delete it? [y/n]"
+	read chose
+	if [ $chose = "y" ] || [ $chose = "Y" ] ;
+	then
+		rm $temp
+	else
+		echo "exiting"
+		exit 1
+	fi
+fi
+
 echo "----------------------"
-for f in update upgrade autoclean autoremove; do echo "sudo apt $f -y" && echo "----------------------" && sudo apt $f -y && echo "----------------------"; done
+echo "Checking updates"
 echo "----------------------"
+sudo apt update -y 2>/dev/null | tee $temp
+echo "----------------------"
+
+if [ -z $(awk '/All/ {print 0}' $temp) ] ;
+then
+	echo "Upgrading and cleaning"
+	echo "----------------------"
+	for f in upgrade autoclean autoremove; do echo "sudo apt $f -y" && echo "----------------------" && sudo apt $f -y && echo "----------------------"; done
+	echo "----------------------"
+fi
+
+rm $temp
 echo "Done"
 echo "----------------------"
+exit 0
