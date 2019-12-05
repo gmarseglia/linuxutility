@@ -3,12 +3,13 @@
 #	Esegue in ordine la sudo apt update, upgrade, autoclean, autoremove
 #	tutte con l'opzione -y, per eliminare la conferma da parte utente;
 #	crea e rimuove automaticamente il file "temp.out"
+#
 #	prova a richiedere "liner"
 #
 
 temp="temp.out"
 
-if [ -e $temp ] ; 
+if [ -r $temp ] ; 
 then
 	echo -e "$temp is already in use.\nDo you want to delete it? [y/n]"
 	read chose

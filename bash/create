@@ -3,6 +3,7 @@
 #	Permette di creare nella directory attuale un file .sh con i permessi settati
 #	accetta sia create "nome file", sia create
 #
+
 if [ -z $1 ];
 then
 echo "Insert bash name"

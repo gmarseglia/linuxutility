@@ -5,3 +5,5 @@ getLocalIp:		ritorna l'attuale indirizzo IP interno sulla scheda $card
 printDate:		Ritorna la data con il formato "2019-11-26 19:32 ->"
 svnCommitAll:	Committa con svn tutte le cartelle in $path
 svnUpdateAll:	Update con svn tutte le cartelle in $path
+liner:			Stampa una stringa di "-" lunga max;
+longestLine:	Stampa la lunghezza della riga più lunga del file

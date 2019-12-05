@@ -1,5 +1,9 @@
 # !/bin/bash
-
+#
+#	Stampa la lunghezza della riga più lunga del file
+#	file passato come primo parametro
+#
+	
 if [ $1 -a -e $1 ] ;
 then
 	in=$1
