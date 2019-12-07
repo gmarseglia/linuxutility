@@ -47,3 +47,5 @@ Permessi file: chmod 666 $FILE
 Permessi cartelle: chmod 775 $CARTELLA
 
 Ignorare warning ed errori: $COMAND 2>/dev/null
+
+Misurare tempo di un comand: /usr/bin/time -p -o $FILEOUTPUT COMMAND
