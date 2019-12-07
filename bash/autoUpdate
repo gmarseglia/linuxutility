@@ -22,6 +22,16 @@ then
 	fi
 fi
 
+if [ ! -z $1 ] ;
+then
+	if [ $1 = '-a' ] || [ $1 = '--all' ] ;
+	then
+		all=0
+	else
+		all=1
+	fi
+fi
+
 div=$(command -v liner)
 if [ $? = 0 ];
 then
@@ -36,7 +46,7 @@ echo -e "Checking updates\n$div"
 sudo apt update -y 2>/dev/null | tee $temp
 echo $div
 
-if [ -z $(awk '/All/ {print 0}' $temp) -o $1 = "-a" -o $1 = "--all" ] ;
+if [ -z $(awk '/All/ {print 0}' $temp) ] || [ $all ] ;
 then
 	echo "Upgrading and cleaning"
 	echo $div
