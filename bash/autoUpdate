@@ -32,7 +32,8 @@ then
 	fi
 fi
 
-div=$(command -v liner)
+# div=$(command -v liner)
+command -v liner > /dev/null
 if [ $? = 0 ];
 then
 	div=$(liner)
@@ -55,6 +56,13 @@ then
 fi
 
 rm $temp
-echo "Done"
+command -v df > /dev/null
+if [ $? = 0 ];
+then
+	echo "Done. Memory status is:"
+	df -h | grep 'Filesystem\|sda8'
+else
+	echo "Done. Memory status unavaible."
+fi
 echo $div
 exit 0
