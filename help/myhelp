@@ -49,3 +49,13 @@ Permessi cartelle: chmod 775 $CARTELLA
 Ignorare warning ed errori: $COMAND 2>/dev/null
 
 Misurare tempo di un comand: /usr/bin/time -p -o $FILEOUTPUT COMMAND
+
+Or in grep: grep 'pattern1\|pattern2'; grep -e pattern1 -e pattern2
+
+Disk usage in maniera leggibile: df -h
+
+Controllare se file esiste: commmand NOMECOMANDO (should exit with 0)
+
+Log di sistema in: /var/log
+
+Stampare il journal: journalctl -a

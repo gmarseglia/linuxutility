@@ -4,7 +4,7 @@
 #	tutte con l'opzione -y, per eliminare la conferma da parte utente;
 #	crea e rimuove automaticamente il file "temp.out"
 #
-#	prova a richiedere "liner", "df"
+#	prova a richiedere "liner", "df	"
 #
 
 temp="temp.out"
