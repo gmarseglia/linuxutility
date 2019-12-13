@@ -4,7 +4,7 @@
 #	tutte con l'opzione -y, per eliminare la conferma da parte utente;
 #	crea e rimuove automaticamente il file "temp.out"
 #
-#	prova a richiedere "liner"
+#	prova a richiedere "liner", "df"
 #
 
 temp="temp.out"
@@ -56,6 +56,7 @@ then
 fi
 
 rm $temp
+
 command -v df > /dev/null
 if [ $? = 0 ];
 then
@@ -65,4 +66,5 @@ else
 	echo "Done. Memory status unavaible."
 fi
 echo $div
+
 exit 0
