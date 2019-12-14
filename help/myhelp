@@ -61,3 +61,5 @@ Log di sistema in: /var/log
 Stampare il journal: journalctl -a
 
 Ricevere informazioni sull'ultimo shutdown (crash anche): last -x (| less)
+
+Trovare duplicati: fdupes -f CARTELLA
