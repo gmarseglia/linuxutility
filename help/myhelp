@@ -59,3 +59,5 @@ Controllare se file esiste: commmand NOMECOMANDO (should exit with 0)
 Log di sistema in: /var/log
 
 Stampare il journal: journalctl -a
+
+Ricevere informazioni sull'ultimo shutdown (crash anche): last -x (| less)

@@ -7,7 +7,7 @@
 #	prova a richiedere "liner", "df	"
 #
 
-temp="temp.out"
+temp="/home/giuseppe/temp.out"
 
 if [ -r $temp ] ; 
 then
