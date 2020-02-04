@@ -65,3 +65,9 @@ Ricevere informazioni sull'ultimo shutdown (crash anche): last -x (| less)
 Trovare duplicati: fdupes -f CARTELLA
 
 Comandi senza storia: export HISTFILE=/dev/null
+
+Creare file temporaneti: NOMEFILE=$(mktemp)
+
+Trovare dispositivi connessi: sudo nmap -sn LOCALIP/SUBNENTMASK e.s. 192.168.1.1/24 oppure 192.168.1.*
+
+Cercare comando dall'effetto: apropos STRINGAEFFETTO
