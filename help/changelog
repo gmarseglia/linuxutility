@@ -73,3 +73,9 @@
 2020-01-18 18:53 -> Installato il package powerstat
 2020-02-02 16:47 ->	Installato il package gthumb
 2020-02-02 17:11 ->	Installato il package ffmpeg
+2020-02-04 23:14 -> Modificato il file /etc/fstab per permette i permessi della partizione DATA in sda9
+2020-02-06 17:01 ->	Installato il package vlc
+2020-03-02 18:23 ->	Installato il package aptitude
+2020-03-11 19:28 -> Installato il package mysql-server
+2020-04-26 14:43 -> Installato il package steam-installer
+2020-04-26 14:50 -> Installato il package wondershaper
