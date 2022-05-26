@@ -1,8 +1,0 @@
-# !/bin/bash
-#
-#	Ritorna l'attuale indirizzo IP interno sulla scheda $card
-#
-#	Richiede awk
-#
-card="wlp2s0"
-ifconfig $card | grep 'inet ' | awk '{print $2}'
