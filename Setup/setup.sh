@@ -44,8 +44,9 @@ printf "\n###FINE MODIFICHE DOVUTE A setup.sh\n" >> ~/.bashrc
 if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
 echo 'set completion-ignore-case On' >> ~/.inputrc
 
+#	DEACTIVATED
 #	Aggiunge un link alla InstallDirectory nella directory principale
-if [ ! -d ~/Linux ]; then ln -s $INSTALLDIRECTORY ~; fi
+#if [ ! -d ~/Linux ]; then ln -s $INSTALLDIRECTORY ~; fi
 
 #	Crea la cartella Workspace se non esiste
 if [ ! -d $WORKSPACEDIRECTORY ] ;
