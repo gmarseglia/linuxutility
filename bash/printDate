@@ -1,7 +1,0 @@
-# !/bin/bash
-#
-#	Ritorna la data con il formato "2019-11-26 19:32 ->"
-#
-start=$(date +"%Y-%m-%d %H:%M ->")
-echo $start
-

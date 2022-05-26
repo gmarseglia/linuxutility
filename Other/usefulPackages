@@ -1,0 +1,18 @@
+MegaSync: syncer per Mega
+	https://mega.nz/sync
+
+Sublime: Editor di testo
+	sudo snap install sublime-text --classic
+
+Terminator: terminale di comandi con funzione di split screen
+	sudo apt install terminator
+
+ncdu: comando interattivo da terminale  per grandezza di cartelle
+	sudo apt install ncdu
+
+BalenaEtcher: tool con GUI per creare bootable USB
+	https://www.balena.io/etcher/
+
+RetroArch: piattaforme per emulazione di varie console
+	snap install retroarch
+
