@@ -1,6 +1,6 @@
-cl=' clear'
+cl='clear'
 l='ls -CF'
-ll=' ls -AlthHFG'
+ll='ls -AlthHFG'
 mv='mv -i'
 rm='rm -I'
 xx='xdg-open . 2>/dev/null'

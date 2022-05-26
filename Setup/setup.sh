@@ -2,12 +2,13 @@
 #	Esegue il setup dell'ambiente di Linux
 #
 
-INSTALLDIRECTORY="$HOME/MEGAsync/Linux"
+THIS_PATH=$(pwd)
+INSTALLDIRECTORY=$(builtin cd "$THIS_PATH/.."; pwd)
 WORKSPACEDIRECTORY="$HOME/Workspace"
 
 CUSTOMBINDIRECTORY="$INSTALLDIRECTORY/Script"
-CUSTOMCOMMANDSFILE="$INSTALLDIRECTORY/Setup/customcommands.txt"
-MOREBASHRC="$INSTALLDIRECTORY/Setup/morebashrc.txt"
+CUSTOMCOMMANDSFILE="$INSTALLDIRECTORY/Setup/customCommands"
+MOREBASHRC="$INSTALLDIRECTORY/Setup/moreBashrc"
 
 if [ -a ~/.bashrc ] ;
 	then
