@@ -6,7 +6,8 @@ MODE_TO_SET=""
 WACOM_ID=`xsetwacom --list | grep stylus | awk '{print $9}'`
 xsetwacom --set $WACOM_ID Button 2 "pan"
 xsetwacom --set $WACOM_ID PanScrollThreshold 250
-xsetwacom --set $WACOM_ID CursorProximity 15
+# xsetwacom --set $WACOM_ID CursorProximity 15
+# xsetwacom --set $WACOM_ID Area "2160 1300 19440 12100"
 
 if [[ -z $1 ]] || ([[ $1 == '-s' ]] || [[ $1 == '--switch' ]]) ; then
 	MODE_GET=$(xsetwacom --get $WACOM_ID Mode)
