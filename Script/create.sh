@@ -23,7 +23,7 @@ name="$PWD/$basename.sh"
 
 printf "Creating $name\n"
 touch "$name"
-printf "# !/bin/bash\n" >> "$name"
+printf "#!/bin/bash\n" >> "$name"
 chmod +rx "$name"
 
 exit 0

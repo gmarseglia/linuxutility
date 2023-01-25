@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 MODE_TO_SET=""
 
@@ -30,6 +30,9 @@ if [[ -z $MODE_TO_SET ]] ; then
 	printf "Incorrect usage.\n"
 	exit 1 ;
 fi
+
+#Adjust Graphic tablet rotation
+xsetwacom --set $WACOM_ID Rotate half
 
 xsetwacom --set $WACOM_ID Mode $MODE_TO_SET
 
