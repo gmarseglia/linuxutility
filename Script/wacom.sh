@@ -5,6 +5,7 @@ MODE_TO_SET=""
 # Configure Wacom Tablet
 WACOM_ID=`xsetwacom --list | grep stylus | awk '{print $9}'`
 xsetwacom --set $WACOM_ID Button 2 "pan"
+xsetwacom --set $WACOM_ID Button 3 "button" "+3 -3"
 xsetwacom --set $WACOM_ID PanScrollThreshold 250
 # xsetwacom --set $WACOM_ID CursorProximity 15
 # xsetwacom --set $WACOM_ID Area "2160 1300 19440 12100"
