@@ -24,6 +24,7 @@ printf "\n###INZIO MODIFICHE DOVUTE A setup.sh\n" >> $HOME/.bashrc
 printf "\n#Directory di MegaSync per l'esecuzione dei bin custom\n" >> $HOME/.bashrc
 #echo export PATH='$PATH':$CUSTOMBINDIRECTORY >> $HOME/.bashrc
 printf "export PATH="'$PATH'":$CUSTOMBINDIRECTORY\n" >> $HOME/.bashrc
+printf "export INSTALL_DIRECTORY=$INSTALLDIRECTORY\n" >> $HOME/.bashrc
 
 #	Rende eseguibili tutti i bin custom nella CustomBinDirectory
 chmod a+x $CUSTOMBINDIRECTORY/*
